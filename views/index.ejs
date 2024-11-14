@@ -2,24 +2,31 @@
 <html lang="en">
 
 <head>
+    <!-- Set the character encoding of the document to UTF-8 -->
     <meta charset="UTF-8">
+    <!-- Make the page responsive to different screen sizes -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Set the title of the webpage -->
     <title>Real-Time Tracking App</title>
+    <!-- Link to an external CSS stylesheet for custom styles -->
     <link rel="stylesheet" href="/css/styles.css" />
+    <!-- Link to the Leaflet CSS for the interactive map, used for real-time location tracking -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-
 </head>
 
 <body>
-
+    <!-- Div element to hold the interactive map -->
     <div id="map"></div>
 
+    <!-- Include the Leaflet JavaScript library for map functionality -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <!-- Include the Socket.io library for real-time communication with the server -->
     <script src="https://cdn.socket.io/4.8.0/socket.io.min.js"
         integrity="sha384-OoIbkvzsFFQAG88r+IqMAjyOtYDPGO0cqK5HF5Uosdy/zUEGySeAzytENMDynREd"
         crossorigin="anonymous"></script>
+    <!-- Link to a custom JavaScript file that will handle the client-side logic -->
     <script src="/js/script.js"></script>
 </body>
 
